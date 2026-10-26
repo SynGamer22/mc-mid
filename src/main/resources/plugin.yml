@@ -1,0 +1,43 @@
+name: MineEconomy
+main: com.bartermarket.BarterMarketPlugin
+version: 1.0.0
+api-version: '26.2'
+description: Player-to-player barter marketplace for PaperMC.
+author: BarterMarket Team
+commands:
+  market:
+    description: Open the barter marketplace and manage listings.
+    usage: /market [sell|listings|mailbox|claim|history|undo|help|admin]
+    aliases: [bm]
+    permission: bartermarket.use
+  gift:
+    description: Send items to another player's marketplace mailbox.
+    usage: /gift
+    permission: bartermarket.gift
+  mail:
+    description: Open your inbox or send a message to a player.
+    usage: /mail [player] <message>
+    permission: bartermarket.email
+permissions:
+  bartermarket.use:
+    default: true
+  bartermarket.sell:
+    default: true
+  bartermarket.gift:
+    default: true
+  bartermarket.email:
+    default: true
+  bartermarket.listings:
+    default: true
+  bartermarket.mailbox:
+    default: true
+  bartermarket.claim:
+    default: true
+  bartermarket.history:
+    default: true
+  bartermarket.undo:
+    default: true
+  bartermarket.help:
+    default: true
+  bartermarket.admin:
+    default: op

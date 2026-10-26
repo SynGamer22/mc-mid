@@ -1,0 +1,11 @@
+command.help: |
+  BarterMarket commands:
+  /market - Open the global marketplace
+  /market sell - Create a listing
+  /market listings - View your active listings
+  /market mailbox - Open your mailbox
+  /market claim - Claim pending deliveries
+  /market history - View your history
+  /market undo - Undo your most recent listing
+  /market help - Show this help
+  /market admin - Administrator tools

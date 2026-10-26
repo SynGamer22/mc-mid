@@ -1,0 +1,24 @@
+database:
+  path: "plugins/BarterMarket/database.db"
+  journalMode: WAL
+
+market:
+  pageSize: 45
+  defaultListingExpiryMinutes: 1440
+  maxListingsPerPlayer: 20
+
+mailbox:
+  allowPartialClaims: false
+
+messages:
+  noPermission: "You do not have permission to use that command."
+  notPlayer: "This command can only be run by a player."
+  listingCreated: "Your listing has been published."
+  listingNotFound: "That listing could not be found."
+  purchaseSuccess: "Purchase complete."
+  claimSuccess: "Items claimed from your mailbox."
+  undoSuccess: "Your most recent listing has been undone."
+
+security:
+  requireUuidChecks: true
+  quarantineOnAmbiguousState: true
